@@ -3,7 +3,6 @@ import sys
 import subprocess
 import time
 import re
-from complexity_analyzer import analyze_complexity
 ALLOWED_FILES = [".py"]
 INTER_FILENAME = "status.txt"
 
