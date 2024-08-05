@@ -303,9 +303,12 @@ def main():
             sys.exit(1)
         rule = filearg_analysis(file_arg)
         if rule == "none":
-            print("\033[91mERR! \033[0mPlease enter a valid arguement. \033[90m'-ns for normal start'\033[0m")
-            sys.exit(1)
-        filename = sys.argv[2]
+            #print("\033[91mERR! \033[0mPlease enter a valid arguement. \033[90m'-ns for normal start'\033[0m")
+            #sys.exit(1)
+            print("\033[90mNo Start Rule Set; Starting in Normal Mode\n")
+            filename = sys.argv[1]
+        else:
+            filename = sys.argv[2]
     except IndexError:
         print("\033[91mERR! \033[0mPlease enter a file.")
         sys.exit(1)
